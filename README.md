@@ -13,7 +13,6 @@ A Visual Studio Code extension for managing command configurations with environm
 - **GUI-Based Editor**: Create and edit configurations using a WebView form instead of editing JSON manually
 - **Terminal Integration**: Execute configurations in dedicated terminals with environment variables automatically injected
 - **Clean Execution**: Each configuration reuses its terminal for organized execution history
-- **Team Collaboration**: Configurations stored in `.vscode/settings.json` for easy version control and sharing
 
 ## Screenshots
 
