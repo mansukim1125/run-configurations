@@ -2,7 +2,7 @@
   "name": "run-configurations",
   "displayName": "Run Configurations",
   "description": "Run/Debug Configurations for VSCode",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "mansukim",
   "repository": {
     "type": "git",
