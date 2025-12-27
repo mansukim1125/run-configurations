@@ -1,0 +1,155 @@
+{
+  "name": "run-configurations",
+  "displayName": "Run Configurations",
+  "description": "Run/Debug Configurations for VSCode",
+  "version": "0.1.0",
+  "publisher": "joonseok kim",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mansukim1125/run-configurations.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "runConfigurationsContainer",
+          "title": "Run Configurations",
+          "icon": "$(run)"
+        }
+      ]
+    },
+    "views": {
+      "runConfigurationsContainer": [
+        {
+          "id": "runConfigurations",
+          "name": "Configurations",
+          "contextualTitle": "Run Configurations"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "runConfigurations.add",
+        "title": "Add Configuration",
+        "icon": "$(add)"
+      },
+      {
+        "command": "runConfigurations.run",
+        "title": "Run",
+        "icon": "$(play)"
+      },
+      {
+        "command": "runConfigurations.edit",
+        "title": "Edit",
+        "icon": "$(edit)"
+      },
+      {
+        "command": "runConfigurations.delete",
+        "title": "Delete",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "runConfigurations.refresh",
+        "title": "Refresh",
+        "icon": "$(refresh)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "runConfigurations.add",
+          "when": "view == runConfigurations",
+          "group": "navigation"
+        },
+        {
+          "command": "runConfigurations.refresh",
+          "when": "view == runConfigurations",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "runConfigurations.run",
+          "when": "view == runConfigurations && viewItem == runConfiguration",
+          "group": "inline@1"
+        },
+        {
+          "command": "runConfigurations.edit",
+          "when": "view == runConfigurations && viewItem == runConfiguration",
+          "group": "inline@2"
+        },
+        {
+          "command": "runConfigurations.delete",
+          "when": "view == runConfigurations && viewItem == runConfiguration",
+          "group": "inline@3"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Run Configurations",
+      "properties": {
+        "runConfigurations.configurations": {
+          "type": "array",
+          "default": [],
+          "description": "List of run configurations",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Unique identifier"
+              },
+              "name": {
+                "type": "string",
+                "description": "Configuration name"
+              },
+              "command": {
+                "type": "string",
+                "description": "Command to execute"
+              },
+              "args": {
+                "type": "string",
+                "description": "Space-separated arguments"
+              },
+              "env": {
+                "type": "object",
+                "description": "Environment variables",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "cwd": {
+                "type": "string",
+                "description": "Working directory"
+              }
+            },
+            "required": ["id", "name", "command"]
+          }
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.x",
+    "typescript": "^5.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.x",
+    "@typescript-eslint/parser": "^6.x",
+    "eslint": "^8.x"
+  }
+}
