@@ -3,7 +3,7 @@
   "displayName": "Run Configurations",
   "description": "Run/Debug Configurations for VSCode",
   "version": "0.1.0",
-  "publisher": "joonseok kim",
+  "publisher": "mansukim",
   "repository": {
     "type": "git",
     "url": "https://github.com/mansukim1125/run-configurations.git"
