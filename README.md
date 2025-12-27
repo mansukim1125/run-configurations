@@ -1,6 +1,6 @@
 # Run Configurations
 
-[![Version](https://img.shields.io/badge/version-0.1.3-blue.svg)](https://github.com/mansukim1125/run-configurations)
+[![Version](https://img.shields.io/badge/version-0.1.4-blue.svg)](https://github.com/mansukim1125/run-configurations)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![VSCode](https://img.shields.io/badge/VSCode-^1.107.0-007ACC.svg)](https://code.visualstudio.com/)
 
@@ -20,7 +20,7 @@ A Visual Studio Code extension for managing command configurations with environm
 
 ## Requirements
 
-- Visual Studio Code version 1.85.0 or higher
+- Visual Studio Code version 1.107.0 or higher
 - Node.js and npm (for development)
 
 ## Installation
