@@ -1,8 +1,8 @@
 # Run Configurations
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/mansukim1125/run-configurations)
+[![Version](https://img.shields.io/badge/version-0.1.2-blue.svg)](https://github.com/mansukim1125/run-configurations)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![VSCode](https://img.shields.io/badge/VSCode-^1.85.0-007ACC.svg)](https://code.visualstudio.com/)
+[![VSCode](https://img.shields.io/badge/VSCode-^1.107.0-007ACC.svg)](https://code.visualstudio.com/)
 
 A Visual Studio Code extension for managing command configurations with environment variables through an intuitive GUI. Simplify your workflow by organizing frequently used commands with their environment settings in one place.
 
