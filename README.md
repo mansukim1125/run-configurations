@@ -25,17 +25,18 @@ A Visual Studio Code extension for managing command configurations with environm
 
 ## Installation
 
-### From Source
+### From VS Code Marketplace
+
+Install directly from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=mansukim.run-configurations)
+
+Or search for "Run Configurations" in the VSCode Extensions view (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+
+### From Source/VSIX
 
 1. Clone this repository
 2. Run `npm install` to install dependencies
-3. Run `npm run compile` to build the extension
-4. Press F5 to launch the Extension Development Host
-
-### From VSIX
-
-1. Package the extension: `npx vsce package`
-2. Install the generated `.vsix` file in VSCode
+3. Package the extension: `npx vsce package`
+4. Install the generated `.vsix` file in VSCode
 
 ## Usage
 
